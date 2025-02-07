@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Резюме - Маннапов Арман</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin: 0.1cm;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 60%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            width: 20%;
+            margin: 20px;
+            background: #2b7a78;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .sidebar h2 {
+            cursor: pointer;
+            text-align: center;
+        }
+        .certificates {
+            display: none;
+            text-align: center;
+        }
+        .certificates img {
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+        h3 {
+            color: #006666;
+        }
+        .profile {
+            background: #2b7a78;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .profile p {
+            margin: 5px 0;
+        }
+        .section {
+            margin-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            background: #e0f7fa;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+        .projects a {
+            display: block;
+            margin: 5px 0;
+            color: #00796b;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function toggleCertificates() {
+            var certs = document.getElementById("certificates");
+            certs.style.display = certs.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <h1>Маннапов Арман</h1>
+            <h2>Студент</h2>
+            <p><strong>Телефон:</strong> +998 88 854-84-40</p>
+            <p><strong>Email:</strong> armanmannapov@gmail.com</p>
+            <p><strong>Telegram:</strong> @MArman_7</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/ArmanGOAT" style="color: white;">github.com/ArmanGOAT</a></p>
+        </div>
+
+        <div class="section">
+            <h3>Опыт работы</h3>
+            <p><strong>Учебный центр 101%</strong> (Июнь - Август 2024)</p>
+            <p>Academic Support по математике</p>
+        </div>
+
+        <div class="section">
+            <h2>Образование</h2>
+            <p><strong>Университет Инха в Ташкенте</strong> (2023 - 2027)</p>
+            <p>Бакалавр в сфере информационных технологий</p>
+        </div>
+
+        <div class="section skills">
+            <h3>Навыки</h3>
+            <ul>
+                <li>Python (FastAPI, Django)</li>
+                <li>SQLite, MySQL</li>
+                <li>C++</li>
+                <li>Java (JavaFX, Android SDK)</li>
+                <li>Git (База)</li>
+                <li>Computer Science (ООП, Структуры данных, Потоки и т.д.)</li>
+            </ul>
+        </div>
+
+        <div class="section projects">
+            <h3>Проекты</h3>
+            <p><strong>Анимации на Python (Manim)</strong></p>
+            <a href="https://youtu.be/MWtd_t083So">https://youtu.be/MWtd_t083So</a>
+            <a href="https://youtu.be/8-8B0_STIx8">https://youtu.be/8-8B0_STIx8</a>
+            <p><strong>Приложение на Kotlin (Android SDK)</strong></p>
+            <a href="https://youtu.be/lwnc_b0OdB8">https://youtu.be/lwnc_b0OdB8</a>
+        </div>
+
+        <div class="sidebar">
+            <h2 onclick="toggleCertificates()">Сертификаты</h2>
+            <div id="certificates" class="certificates">
+                <img src="cert1.jpg" alt="Сертификат 1">
+                <img src="cert2.jpg" alt="Сертификат 2">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
